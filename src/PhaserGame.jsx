@@ -44,7 +44,7 @@ const PhaserGame = () => {
         });
     
         // Load the Tiled map JSON file
-        this.load.tilemapTiledJSON('map', '/map1.json');
+        this.load.tilemapTiledJSON('map', '/Pipoya RPG Tileset 32x32/SampleMap/samplemap.json');
     
         // Load each tileset image as per the JSON tileset entries
         this.load.image('WaterFall', '/Pipoya RPG Tileset 32x32/SampleMap/[A]WaterFall_pipo.png');
@@ -57,7 +57,7 @@ const PhaserGame = () => {
 
     function create() {
         // Create the map
-        const map = this.make.tilemap({ key: 'map' });
+        const map = this.add.tilemap({ key: 'map' });
     
         // Add each tileset to the map, matching the name in the JSON file and the loaded image
         const waterfallTileset = map.addTilesetImage('[A]WaterFall_pipo', 'WaterFall');
