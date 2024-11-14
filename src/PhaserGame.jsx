@@ -44,7 +44,7 @@ const PhaserGame = () => {
         });
     
         // Load the Tiled map JSON file
-        this.load.tilemapTiledJSON('map', '/map1.json');
+        this.load.tilemapTiledJSON('map', '/Pipoya RPG Tileset 32x32/SampleMap/samplemap.json');
     
         // Load each tileset image as per the JSON tileset entries
         this.load.image('WaterFall', '/Pipoya RPG Tileset 32x32/SampleMap/[A]WaterFall_pipo.png');
