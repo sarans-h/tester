@@ -57,7 +57,7 @@ const PhaserGame = () => {
 
     function create() {
         // Create the map
-        const map = this.make.tilemap({ key: 'map' });
+        const map = this.add.tilemap({ key: 'map' });
     
         // Add each tileset to the map, matching the name in the JSON file and the loaded image
         const waterfallTileset = map.addTilesetImage('[A]WaterFall_pipo', 'WaterFall');
